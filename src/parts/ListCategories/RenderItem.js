@@ -18,9 +18,6 @@ export default function RenderItem({item}) {
                     </h5>
                 </div>
 
-                
-
-
                 <Link href="/courses/[slug]" as={`/courses/${item.id}`}>
                     <a className="link-wrapped"></a>
                 </Link>

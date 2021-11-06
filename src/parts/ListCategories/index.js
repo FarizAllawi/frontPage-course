@@ -66,8 +66,6 @@ export default function ListCategories() {
                                         <div className="w-full text-center-py-12">
                                             No Item Found
                                         </div>
-
-                    
                 }
             </div>
         </>
