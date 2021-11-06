@@ -5,15 +5,13 @@ const withImages = require("next-images")
 
 const path = require("path")
 
-module.exports = {
-  withPlugins([
-    withCss({}),
-    withImages({}),
-    withReactSvg({
-      include: path.resolve(__dirname, "./public/images"),
-      webpach(config, options) {
-        return config
-      },
-    })
-  ]),
-  reactStrictMode: true, 
+module.exports = withPlugins([
+  withCss({}),
+  withImages({}),
+  withReactSvg({
+    include: path.resolve(__dirname, "./public/images"),
+    webpach(config, options) {
+      return config
+    },
+  })
+])
